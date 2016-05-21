@@ -18,6 +18,10 @@ describe('Routes', function () {
     it('should use the correct template', function () {
       expect(state.templateUrl).toEqual('views/settings.html')
     });
+
+    it('should use the right controller', function () {
+      expect(state.controller).toContain('SettingsController');
+    });
   });
 
   describe('Settings/user', function () {
@@ -32,6 +36,10 @@ describe('Routes', function () {
     it('should use the correct template', function () {
       expect(state.templateUrl).toEqual('views/settings/user.html')
     });
+
+    it('should use the right controller', function () {
+      expect(state.controller).toContain('UserSettingsController');
+    });
   });
 
   describe('Settings/notifications', function () {
@@ -45,6 +53,10 @@ describe('Routes', function () {
 
     it('should use the correct template', function () {
       expect(state.templateUrl).toEqual('views/settings/notifications.html')
+    });
+
+    it('should use the right controller', function () {
+      expect(state.controller).toContain('NotificationsSettingsController');
     });
   });
 });
