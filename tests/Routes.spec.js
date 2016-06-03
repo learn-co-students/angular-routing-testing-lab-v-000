@@ -8,38 +8,70 @@ describe('Routes', function () {
   }));
 
   describe('Settings', function () {
-    var state;
+      var state;
 
-    it('should have the correct URL', function () {
-      state = $state.get('settings');
+      it('should have the correct URL', function () {
+        state = $state.get('settings');
 
-      expect(state.url).toEqual('/settings');
-      expect(state.templateUrl).toEqual('views/settings.html')
-      expect(state.controller).toEqual('SettingsController')
-    });
+        expect(state.url).toEqual('/settings');
+      });
+
+      it('should have the correct templateUrl', function(){
+
+        expect(state.templateUrl).toEqual('views/settings.html')
+        
+      })
+
+      it('should have the correct controller', function(){
+
+        expect(state.controller).toEqual('SettingsController')
+
+      })
   });
 
   describe('user', function () {
-    var state;
+      var state;
 
-    it('should have the correct URL', function () {
-      state = $state.get('settings.user');
+      it('should have the correct URL', function () {
+        state = $state.get('settings.user');
 
-      expect(state.url).toEqual('/user');
-      expect(state.templateUrl).toEqual('views/settings/user.html')
-      expect(state.controller).toEqual('UserSettingsController')
-    });
+        expect(state.url).toEqual('/user');
+        
+      });
+
+      it('shoudl have the correct templateUrl', function(){
+
+        expect(state.templateUrl).toEqual('views/settings/user.html')
+        
+      })
+
+      it('should have the correct controller', function(){
+
+        expect(state.controller).toEqual('UserSettingsController')
+
+      })
   });
 
   describe('notifications', function () {
-    var state;
+      var state;
 
-    it('should have the correct URL', function () {
-      state = $state.get('settings.notifications');
+      it('should have the correct URL', function () {
+        state = $state.get('settings.notifications');
 
-      expect(state.url).toEqual('/notifications');
-      expect(state.templateUrl).toEqual('views/settings/notifications.html')
-      expect(state.controller).toEqual('NotificationsSettingsController')
-    });
+        expect(state.url).toEqual('/notifications');
+        
+      });
+
+      it('should have the correct templateUrl', function(){
+
+        expect(state.templateUrl).toEqual('views/settings/notifications.html')
+        
+      })
+
+      it('should have the correct controller', function(){
+
+        expect(state.controller).toEqual('NotificationsSettingsController')
+        
+      })
   });   
 });
