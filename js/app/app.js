@@ -1,5 +1,5 @@
 angular
-    .module('app', ['ui.router'])
+  .module('app', ['ui.router'])
 	.config(function ($stateProvider) {
 		$stateProvider
 			.state('settings', {
@@ -17,4 +17,5 @@ angular
 				templateUrl: 'views/settings/notifications.html',
 				controller: 'NotificationsSettingsController'
 			});
+
 	});
