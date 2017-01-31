@@ -25,7 +25,7 @@ describe('Routes', function() {
     });
   });
 
-  describe('User settings', function() {
+  describe('UserSettings', function() {
     var state;
 
     it('should have the correct URL', function() {
@@ -43,7 +43,7 @@ describe('Routes', function() {
     });
   });
 
-  describe('Notification settings', function() {
+  describe('NotificationsSettings', function() {
     var state;
 
     it('should have the correct URL', function() {
